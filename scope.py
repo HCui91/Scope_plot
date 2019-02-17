@@ -29,7 +29,7 @@ def labelling():
 if channel == "1" :
     t,y1 = np.loadtxt(filename,delimiter=",",unpack=True,skiprows=2)
     t = t - min(t)
-    plt.plot(t,y1,"b-",label="Oscilloscope observation")
+    plt.plot(t,y1,"k-",label="Oscilloscope observation")
     labelling()
 elif channel == "2":
     t,y1,y2 = np.loadtxt(filename,delimiter=",",unpack=True,skiprows=2)
